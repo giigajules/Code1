@@ -1,1 +1,2 @@
-this should be ignored!
+#ignore custom ignore file
+*.ignore
