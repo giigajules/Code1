@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Cheatsheet</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cheatsheet_style.css">
+        <style>
+            @media (min-width: 600px) {  /* somehow doesn't work in css-file */
+                body {
+                    background-color: white;
+                }
+            }
+
+            @media (max-width: 599px) {
+                body {
+                    background-color: rosybrown;
+                }
+            }
+
+            #maintitle { /* example for css within an html-file */
+                color: rosybrown;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="main", id="heading">
+                <h1 id="maintitle">Julie's HTML Cheatsheet</h1>
+                <h4 style="text-align: center; color: white">So I know how this works in practice</h4> <!--example for inline-styling with css-->
+            </div>
+    
+            <div class="main", id="main">
+                <div class="elements"><h3>Lists</h3>
+                    An ordered list:
+                    <ol>
+                        <li>First Item</li>
+                            <ul>
+                                <li>Subitem One</li>
+                                <li>Subitem Two</li>
+                                <li style="font-weight: bold";>Subitem Three</li>
+                            </ul>
+                        <li>Second Item</li>
+                        <li>Third Item</li>
+                    </ol>
+                    An unordered list:
+                    <ul>
+                        <li><a href="https://google.com">Click here if you think the earth is flat</a></li>
+                        <li><a href="https://facebook.com">Click here if you're old</a></li>
+                        <li><a href="https://felix.hs-furtwangen.de/dmz/">Click here if you want to cry</a></li>
+                    </ul>
+                </div>
+        
+                <div class="elements"><h3>Images</h3>
+                    <img src="Images/aciiheroii.jpg" alt="Assassin's Creed III" width="300">
+                </div>
+        
+                <div class="elements"><h3>Links</h3>
+                    <a href="https://cs50.harvard.edu/web/2020/notes/0/">CS50W Lecture 0 Notes</a>
+                    <br><a href="notes">Julie's Notes</a>
+                </div>
+        
+                <div class="elements"><h3>Tables</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ocean</th>
+                                <th>Average Depth</th>
+                                <th>Maximum Depth</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pacific Ocean</td>
+                                <td>4,280 m</td>
+                                <td>10,911 m</td>
+                            </tr>
+                            <tr>
+                                <td>Atlantic Ocean</td>
+                                <td>3,646 m</td>
+                                <td>8,486 m</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        
+                <div class="elements"><h3>Forms</h3>
+                    <form>
+                        <p>
+                            <input type="text" placeholder="Full Name" name="name">
+                            <input type="password" placeholder="Password" name="password">
+                        </p>
+                        <p>
+                            <b>Least favorite color?</b>
+                            <input name="color" type="radio" value="red"> Red
+                            <input name="color" type="radio" value="green"> Green
+                            <input name="color" type="radio" value="blue"> Blue
+                            <input name="color" type="radio" value="yellow"> Yellow
+                        </p>
+                        <p>
+                            <input name="country" list="countries" placeholder="Country">
+                            <datalist id="countries">
+                                <option value="Germany">
+                                <option value="Austria">
+                                <option value="Switzerland">
+                            </datalist>
+                        </p>
+                        <p>
+                            <input type="submit">
+                        </p>
+                    </form>
+                </div>
+                <div class="elements" style="text-align: center;">
+                    <button>Click me!</button>
+                </div>
+            </div>
+    </body>
+</html>

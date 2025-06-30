@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Cheatsheet (Pure HTML)</title>
+    </head>
+    <body>
+        <div name="Heading">
+            <h1>Julie's HTML Cheatsheet</h1>
+            <h4>So I know how this works in practice</h4>
+        </div>
+
+        <div name="Main Body">
+            <div><h3>Lists</h3>
+                An ordered list:
+                <ol>
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                </ol>
+                An unordered list:
+                <ul>
+                    <li>One Item</li>
+                    <li>Another Item</li>
+                    <li>Yet Another Iterm</li>
+                </ul>
+            </div>
+    
+            <div><h3>Images</h3>
+                <img src="Images/aciiheroii.jpg" alt="Assassin's Creed III" width="300">
+            </div>
+    
+            <div><h3>Links</h3>
+                <a href="https://cs50.harvard.edu/web/2020/notes/0/">CS50W Lecture 0 Notes</a>
+                <br><a href="notes">Julie's Notes</a>
+            </div>
+    
+            <div><h3>Tables</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ocean</th>
+                            <th>Average Depth</th>
+                            <th>Maximum Depth</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pacific Ocean</td>
+                            <td>4,280 m</td>
+                            <td>10,911 m</td>
+                        </tr>
+                        <tr>
+                            <td>Atlantic Ocean</td>
+                            <td>3,646 m</td>
+                            <td>8,486 m</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <div><h3>Forms</h3>
+                <form>
+                    <p>
+                        <input type="text" placeholder="Full Name" name="name">
+                        <input type="password" placeholder="Password" name="password">
+                    </p>
+                    <p>
+                        <b>Least favorite color?</b>
+                        <input name="color" type="radio" value="red"> Red
+                        <input name="color" type="radio" value="green"> Green
+                        <input name="color" type="radio" value="blue"> Blue
+                        <input name="color" type="radio" value="yellow"> Yellow
+                    </p>
+                    <p>
+                        <input name="country" list="countries" placeholder="Country">
+                        <datalist id="countries">
+                            <option value="Germany">
+                            <option value="Austria">
+                            <option value="Switzerland">
+                        </datalist>
+                    </p>
+                    <p>
+                        <input type="submit">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

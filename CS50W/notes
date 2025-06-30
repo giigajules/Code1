@@ -1,0 +1,18 @@
+<KEYWORDS>
+    <HTML>
+        HTML = Hypertext Markup Language
+        Hypertext = text that incorporates links
+        element = something on the html-page, there can be elements inside elements
+        tag = specific...tag...in html (e.g. <h1>)
+        attribute = speific information about a tag (e.g. <html lang="en">)
+        DOM = Document Object Model, tree-like structure that describes how all elements are related to each other
+        head = information about the html-page
+        body = everything actually inside the page
+    <CSS>
+        CSS = Cascading Style Sheets
+        Specificity = order in which css chooses which style to apply (from most to least specific)
+            1. inline
+            2. id
+            3. class
+            4. type
+        Selectors = ways to specify what exactly shall be styled

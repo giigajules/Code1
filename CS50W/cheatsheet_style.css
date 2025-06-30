@@ -1,0 +1,57 @@
+h3 { /* apples to all h3-tags which are inside a page that runs this stylesheet */
+    color: rosybrown;
+}
+
+div {
+    background-color: rosybrown;
+    width: 1fr;
+    height: 1fr;
+    padding: 5px; /* space inside element */
+    margin: 20px; /* space outside element */
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    border: 3px solid white;
+}
+            
+#heading { /* only style something with a particular id */
+    background-color: peachpuff;
+}
+
+.elements { /* only style elements of this class */
+    background-color: peachpuff;
+}   
+
+table, th { /* "multiple element selector" */
+    border: 3px solid gray;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+ol > ul > li { /* immediate children (leave out > for ALL children, including grandchildren, etc.) */
+    color: gray;
+}
+
+a {
+    color: rosybrown;
+}
+
+a[href="https://felix.hs-furtwangen.de/dmz/"] { /* specify a particular attribute */
+    font-weight: bold;
+    color: gray;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rosybrown;
+}
+
+button:hover { /* what happens if I hover over the button ("Pseudoclass" */
+    background-color: gray;
+}
