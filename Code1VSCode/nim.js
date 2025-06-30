@@ -14,7 +14,7 @@ var nim;
     function fetch() {
         a = parseInt(prompt("How many items should be in row A?", "1") || "1", 10);
         b = parseInt(prompt("How many items should be in row B?", "1") || "1", 10);
-        b = parseInt(prompt("How many items should be in row C?", "1") || "1", 10);
+        c = parseInt(prompt("How many items should be in row C?", "1") || "1", 10);
         d = parseInt(prompt("How many items should be in row D?", "1") || "1", 10);
         doonce = 1;
     }
@@ -89,6 +89,6 @@ var nim;
             console.log(playerName, "won!");
         }
     }
-    play;
+    play();
 })(nim || (nim = {}));
 //# sourceMappingURL=nim.js.map
