@@ -6,10 +6,18 @@ var nim;
 (function (nim) {
     let player = 0;
     let playerName;
-    let a = parseInt(prompt("How many items should be in row A?", "1") || "1", 10);
-    let b = parseInt(prompt("How many items should be in row B?", "1") || "1", 10);
-    let c = parseInt(prompt("How many items should be in row C?", "1") || "1", 10);
-    let d = parseInt(prompt("How many items should be in row D?", "1") || "1", 10);
+    let a;
+    let b;
+    let c;
+    let d;
+    let doonce = 0;
+    function fetch() {
+        a = parseInt(prompt("How many items should be in row A?", "1") || "1", 10);
+        b = parseInt(prompt("How many items should be in row B?", "1") || "1", 10);
+        b = parseInt(prompt("How many items should be in row C?", "1") || "1", 10);
+        d = parseInt(prompt("How many items should be in row D?", "1") || "1", 10);
+        doonce = 1;
+    }
     //display state: player, rows with amount
     function displayState() {
         console.log("Row 1:", "O".repeat(a));
@@ -66,6 +74,9 @@ var nim;
     }
     //play function
     function play() {
+        if (doonce == 0) {
+            fetch();
+        }
         displayState();
         getPlayer();
         turn();
@@ -78,5 +89,6 @@ var nim;
             console.log(playerName, "won!");
         }
     }
+    play;
 })(nim || (nim = {}));
 //# sourceMappingURL=nim.js.map

@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="nim.js"></script>
     <title>NIM</title>
 </head>
 <body>
     <h1>Welcome to NIM!</h1>
     <h4>Please press F12 and open the console before continuing.</h4>
-    <button onclick="nim.play()">Press me to play!</button>
+    <button onclick="startGame()">Press me to play!</button>
+    <script src="nim.js"></script>
+    <script>
+        function startGame() {
+            if (window.nim && typeof window.nim.play === 'function') {
+                window.nim.play();
+            } else {
+                console.error('nim.play() is not available. Make sure nim.js defines window.nim.');
+            }
+        }
+    </script>
 </body>
 </html>

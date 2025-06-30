@@ -4,10 +4,19 @@
 namespace nim {
     let player:number = 0
     let playerName:string;
-    let a:number = parseInt(prompt("How many items should be in row A?", "1") || "1", 10);
-    let b:number = parseInt(prompt("How many items should be in row B?", "1") || "1", 10);
-    let c:number = parseInt(prompt("How many items should be in row C?", "1") || "1", 10);
-    let d:number = parseInt(prompt("How many items should be in row D?", "1") || "1", 10);
+    let a:number;
+    let b:number;
+    let c:number;
+    let d:number;
+    let doonce:number = 0;
+
+    function fetch(): void {
+        a = parseInt(prompt("How many items should be in row A?", "1") || "1", 10);
+        b = parseInt(prompt("How many items should be in row B?", "1") || "1", 10);
+        b = parseInt(prompt("How many items should be in row C?", "1") || "1", 10);
+        d = parseInt(prompt("How many items should be in row D?", "1") || "1", 10);
+        doonce = 1;
+    }
     
     //display state: player, rows with amount
     function displayState(): void{
@@ -70,6 +79,9 @@ namespace nim {
 
      //play function
     function play(): void {
+        if (doonce == 0) {
+            fetch();
+        }
         displayState();
         getPlayer();
         turn();
@@ -82,4 +94,6 @@ namespace nim {
             console.log(playerName, "won!")
         }
     }
+
+    play;
 }
