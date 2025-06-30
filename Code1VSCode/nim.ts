@@ -1,7 +1,7 @@
 // declare variables player & a,b,c,d
 // use prompt to fill a,b,c,d
 // if time, check validity of numbers
-namespace nim {
+
     let player:number = 0
     let playerName:string;
     let a:number;
@@ -95,5 +95,4 @@ namespace nim {
         }
     }
 
-    play();
-}
+    //play();

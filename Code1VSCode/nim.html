@@ -8,7 +8,16 @@
 <body>
     <h1>Welcome to NIM!</h1>
     <h4>Please press F12 and open the console before continuing.</h4>
-    <button>Press me to play!</button>
     <script src="nim.js"></script>
+    <script>
+        function startGame() {
+            if (typeof play === "function") {
+                play();
+            } else {
+                console.error("play() is not defined. Make sure nim.js is compiled and loaded.");
+            }
+        }
+    </script>
+    <button onclick="startGame()">Press me to play!</button>
 </body>
 </html>
