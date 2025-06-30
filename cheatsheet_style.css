@@ -45,6 +45,10 @@ a[href="https://felix.hs-furtwangen.de/dmz/"] { /* specify a particular attribut
     color: gray;
 }
 
+a[href="./Code1VSCode/nim.html"] {
+    font-weight: bold;
+}
+
 button {
     width: 100px;
     height: 50px;
